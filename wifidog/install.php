@@ -75,7 +75,7 @@ $fd = fopen($password_file, "rb");
 $password = trim(fread($fd, filesize($password_file)));
 fclose($fd);
 
-$auth = false;
+$auth = true;
 
 if ($page != 'Welcome') {
     if (isset ($_SERVER['PHP_AUTH_PW'])) {
